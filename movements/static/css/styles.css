@@ -1,0 +1,110 @@
+body > header {
+    padding: 10px;
+    padding-top: 20px;
+    padding-bottom: 0.25px;
+    
+}
+
+body > main, body > footer {
+    padding: 30px;
+    
+    
+}
+
+section.container {
+    min-height: calc(100wh - 90px);
+}
+
+header{
+    background-color:  #18162c;
+    text-align: left;
+    color: cornsilk;
+    padding-bottom: 0%;
+    
+}
+footer {
+    color: #20aab9;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.select_2 {
+width: 50%; 
+}
+
+.ingreso_cantidad {
+    size: 25px;
+}
+
+.nav_bottom {
+    padding-top: 25px;
+    padding-right: 500px;
+    padding-left: 500px;
+
+}
+
+.letra_header {
+    color: #20aab9;
+    font-size: 2.5em; /* 40px/16=2.5em */
+    font-family: 'Yusei Magic', sans-serif;
+    -webkit-text-stroke: 3px #20aab9;
+    color: transparent; 
+    
+}
+
+.cantidad_coin {
+    width: 30%;
+}
+
+.calculadora_boton {
+    font-family: "FontAwesome";
+    width: 80px;
+    background-color:#18162c;
+}
+
+
+.sin_movimientos {
+    font-family: 'Kanit', sans-serif;
+    font-size: 2em;
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 15%;
+
+}
+
+.boton_nav {
+    border-radius: 50px 50px;
+    background-color:#18162c;
+    color: #fff;
+    font-weight: 600;
+    border: 5px solid #20aab9
+
+}
+
+.tabla_mov {
+    background-color: #18162c;
+    text-align: center;
+    color: #18acbd;
+    font-weight: bold;
+}
+
+.boton_inv {
+    color: #18acbd;
+}
+
+.status_form {
+    text-align: center;
+    color: #18162c;
+    font-weight: bold;
+
+}
+
+.errores_try {
+    color:rgb(241, 14, 7);
+    font-weight: bold;
+    font-size: 20px;
+    
+
+}
+

@@ -1,0 +1,15 @@
+config.py
+
+.vscode
+
+test.drawio 
+
+__pycache__/
+
+venv/
+
+coin.py 
+
+movements/Data/basededatos.db
+
+.env 

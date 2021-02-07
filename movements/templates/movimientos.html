@@ -1,0 +1,47 @@
+{% extends 'index.html' %}
+
+{% block title %}  MOVIMIENTOS {% endblock %}
+
+{% block Nav %} 
+<table>
+        <tr>
+                <th><button class ="boton_nav", disabled = "disabled">INICIO</button></th>
+                <th> <a href="/purchase"> <button class ="boton_nav">COMPRA</button></a></th>
+                <th><a href="/status">  <button class ="boton_nav">STATUS</button> </a></th>
+        </tr>
+</table>
+{% endblock %}
+
+
+{% block content %}
+        {% for mensaje in mensajes %}
+        <p class="errores_try">{{mensaje}}</p>
+        {% endfor %}
+        {% if datos|length > 0 %}
+                                <table>
+                                        <tr class="tabla_mov">
+                                                <th>Fecha</th>
+                                                <th>Hora</th>
+                                                <th>From</th>
+                                                <th> Q </th>
+                                                <th> TO </th>
+                                                <th> Q </th>
+                                                <th> P.U</th>
+                                        </tr> 
+                        {% for ingresos in datos %}
+                                <tr>
+                                        <td>{{ ingresos ['date'] }}</td>
+                                        <td>{{ ingresos ['time'] }}</td>
+                                        <td>{{ ingresos['from_currency'] }}</td>
+                                        <td>{{ ingresos['form_quantity'] }}</td>
+                                        <td>{{ ingresos['to_currency'] }}</td>
+                                        <td>{{ ingresos ['to_quantity'] }}</td>
+                                        <td>{{ ingresos ['precio'] }}</td>
+                                </tr>
+                        {% endfor %}
+                                </table>
+        {% else %}
+        <p class="sin_movimientos">SIN MOVIMIENTOS, INVIERTE <i class="fa fa-bitcoin fa-2x"></i> <i class="fa fa-ethereum fa-2x"></i> </p>
+        
+        {% endif %}
+{% endblock %}
